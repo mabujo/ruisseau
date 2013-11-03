@@ -1,5 +1,8 @@
 <?php 
+
 require 'vendor/autoload.php';
+
+header('Cache-Control: max-age=3600, must-revalidate');
 
 //slim init
 $ruisseau = new \Slim\Slim(array(
@@ -8,8 +11,6 @@ $ruisseau = new \Slim\Slim(array(
 	'templates.path' => "views/",
 	'log.enabled' => true
 ));
-
-echo $templates;
 
 //smarty init
 $view = $ruisseau->view();
