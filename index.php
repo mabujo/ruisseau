@@ -1,45 +1,33 @@
 <?php 
 require 'vendor/autoload.php';
 
+//slim init
 $ruisseau = new \Slim\Slim(array(
 	'view' => new \Slim\Views\Smarty(),
 	'debug' => true,
+	'templates.path' => "views/",
 	'log.enabled' => true
 ));
 
+//smarty init
 $view = $ruisseau->view();
-$view->parserDirectory = dirname(__FILE__) . 'smarty';
-$view->parserCompileDirectory = dirname(__FILE__) . '/compiled';
-$view->parserCacheDirectory = dirname(__FILE__) . '/cache';
+$view->parserDirectory = dirname(__FILE__) . '/smarty';
+$view->parserCompileDirectory = dirname(__FILE__) . '/smarty/compiled';
+$view->parserCacheDirectory = dirname(__FILE__) . '/smarty/cache';
+$view->parserExtensions = array(
+    dirname(__FILE__) . '/vendor/slim/views/Slim/Views/SmartyPlugins',
+);
 
-$ruisseau->get('/', 'getHome');
-$ruisseau->get('/about', 'getAbout');
-
-function getHome()
+$ruisseau->get('/', function() use ($ruisseau) 
 {
+	$ruisseau->render('index.tpl', array('title' => 'AceStream Guide', 'content' => 'index'));
+});
 
-}
-
-function getAbout()
+$ruisseau->get('/about/', function() use ($ruisseau) 
 {
-
-}
+	$ruisseau->render('about.tpl', array('title' => 'About AceStream Guide', 'content' => 'index'));
+});
 
 $ruisseau->run();
 
-include("inc/header.php"); 
 ?>
-
-	<div class="jumbotron">
-		<div class="container">
-			<h1>AceStream Guide</h1>
-			<p>AceStream is a peer-to-peer streaming video application that allows you to view high quality video streams shared by other people.</p>
-			<p>Our guide will help you to setup AceStream, so you can enjoy your stream easily and in the best quality.</p>
-		</div>
-	</div>
-
-	<div>
-		<h2>Installing AceStream</h2>
-	</div>
-
-<?php include("inc/footer.php") ?>

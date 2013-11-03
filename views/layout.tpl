@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 
-	<title>AceStream Guide</title>
+	<title>{$title}</title>
 
 	<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -18,4 +18,6 @@
 </head>
 
 <body>
-	<?php include("inc/nav.php"); ?>
+	{include 'nav.tpl'}
+	{block 'content'}<div>Not Found</div>{/block}
+	{include 'footer.tpl'}
