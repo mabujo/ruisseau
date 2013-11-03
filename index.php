@@ -9,6 +9,8 @@ $ruisseau = new \Slim\Slim(array(
 	'log.enabled' => true
 ));
 
+echo $templates;
+
 //smarty init
 $view = $ruisseau->view();
 $view->parserDirectory = dirname(__FILE__) . '/smarty';
@@ -20,13 +22,25 @@ $view->parserExtensions = array(
 
 $ruisseau->get('/', function() use ($ruisseau) 
 {
-	$ruisseau->render('index.tpl', array('title' => 'AceStream Guide', 'content' => 'index'));
+	$template = setupTemplate($ruisseau, 'index.tpl');
+	$ruisseau->lastModified($template['lastMod']);
+	$ruisseau->expires('+1 week');
+	$ruisseau->render($template['name'], array('title' => 'AceStream Guide', 'content' => 'index'));
 });
 
 $ruisseau->get('/about/', function() use ($ruisseau) 
 {
-	$ruisseau->render('about.tpl', array('title' => 'About AceStream Guide', 'content' => 'index'));
+	$template = setupTemplate($ruisseau, 'about.tpl');
+	$ruisseau->lastModified($template['lastMod']);
+	$ruisseau->expires('+1 week');
+	$ruisseau->render($template['name'], array('title' => 'About AceStream Guide', 'content' => 'index'));
 });
+
+function setupTemplate($ruisseau, $template)
+{
+	$templateArr = array('name' => $template, 'lastMod' => filemtime($ruisseau->config('templates.path') . $template) );
+	return $templateArr;
+}
 
 $ruisseau->run();
 
