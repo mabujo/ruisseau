@@ -11,9 +11,9 @@
 	</div>
 	<div class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="{siteUrl}about/">About</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li {if $content eq 'index'}class="active"{/if}><a href="{siteUrl}">Home</a></li>
+			<li {if $content eq 'about'}class="active"{/if}><a href="{siteUrl}about/">About</a></li>
+			<li {if $content eq 'contact'}class="active"{/if}><a href="#contact">Contact</a></li>
 			<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 			<ul class="dropdown-menu">

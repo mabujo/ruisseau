@@ -18,6 +18,8 @@
 </head>
 
 <body>
-	{include 'nav.tpl'}
-	{block 'content'}<div>Not Found</div>{/block}
+	<div id="wrap">
+		{include 'nav.tpl'}
+		{block 'content'}<div>Not Found</div>{/block}
+	</div>
 	{include 'footer.tpl'}

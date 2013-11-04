@@ -34,7 +34,7 @@ $ruisseau->get('/about/', function() use ($ruisseau)
 	$template = setupTemplate($ruisseau, 'about.tpl');
 	$ruisseau->lastModified($template['lastMod']);
 	$ruisseau->expires('+1 week');
-	$ruisseau->render($template['name'], array('title' => 'About AceStream Guide', 'content' => 'index'));
+	$ruisseau->render($template['name'], array('title' => 'About AceStream Guide', 'content' => 'about'));
 });
 
 function setupTemplate($ruisseau, $template)

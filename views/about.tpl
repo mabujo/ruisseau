@@ -8,9 +8,9 @@
 		</div>
 	</div>
 
-	<div>
+	<div class="container">
 		<h2>Installing AceStream</h2>
-		
+		<p>About text</p>
 
 	</div>
 {/block}
