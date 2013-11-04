@@ -29,7 +29,7 @@ $ruisseau->get('/', function() use ($ruisseau)
 	$template = setupTemplate($ruisseau, 'index.tpl');
 	$ruisseau->lastModified($template['lastMod']);
 	$ruisseau->expires('+1 week');
-	$ruisseau->render($template['name'], array('title' => 'AceStream Guide', 'content' => 'index'));
+	$ruisseau->render($template['name'], array('title' => 'AceStream Guide | Fix buffering and get the best from AceStream', 'content' => 'index'));
 });
 
 //about page
