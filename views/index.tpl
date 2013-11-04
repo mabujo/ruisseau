@@ -23,6 +23,7 @@
 			<li><a href="https://mega.co.nz/#!r4J0RIQY!LQheAUIMtTB70r4LqMs0Gng288VsQhMALc01F66p81s" target="_blank">Mega AceStream mirror</a></li>
 			<li><a href="http://www.multiupload.nl/H8KUP561O3" target="_blank">MultiUpload.nl AceStream mirror</a></li>
 		</ul>
+		<p>Once you have installed AceStream, follow our <a href="{siteUrl}buffering/">advanced setup guide to fix AceStream buffering problems</a>.</p>
 		<h3>Linux</h3>
 		<p>AceStream is available for Linux. Follow our <a href="{siteUrl}linux/">Linux AceStream installation guide</a> to install AceStream on your system</p>
 		<h3>Mac OS X</h3>
