@@ -26,7 +26,7 @@ acestream-player-data : Depends: libdvbpsi7 (>= 0.2.0) but it is not installable
 		E: Unable to correct problems, you have held broken packages.</pre> then we are missing a package required by AceStream and we will need to install the missing package before we can go ahead with the AceStream installation.</p>
 		<p>We can get the libdvbpsi7 package from <a href="http://www.ubuntuupdates.org/package/core/precise/universe/base/libdvbpsi7">this site</a>. Just navigate to that page and click the deb package for your architecture (32 or 64bit) under "Download 'libdvbpsi7'". Once the file downloads, you can install it with the Ubuntu software centre.</p>
 		<p>With that package installed, you should be able to run <code>sudo apt-get install acestream-full</code> again in your terminal to install AceStream.</p>
-		<h2>Adding browser handler for acestream:// links</h2>
+		<h2 id="browser">Adding browser handler for acestream:// links</h2>
 		<p>You're probably going to want to add a handler for your browser, so that when you click an AceStream link, it will be opened up in the AceStream player.</p>
 		<p>To do this click on any AceStream link in your browser, and when the Launch Application dialog displays, click to choose an application. Next, navigate to /usr/bin/ and select acestreamplayer. Click Open and your stream should start playing in the external AceStream player. You can also choose to have the browser remember this, so that in future, all acestream:// links launch directly in the player when clicked. </p>
 		</div>

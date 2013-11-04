@@ -50,6 +50,15 @@ $ruisseau->get('/linux/', function() use ($ruisseau)
 	$ruisseau->render($template['name'], array('title' => 'AceStream on Linux | AceStream Guide', 'content' => 'linux'));
 });
 
+//buffering page
+$ruisseau->get('/buffering/', function() use ($ruisseau) 
+{
+	$template = setupTemplate($ruisseau, 'buffering.tpl');
+	$ruisseau->lastModified($template['lastMod']);
+	$ruisseau->expires('+1 week');
+	$ruisseau->render($template['name'], array('title' => 'Fix AceStream buffering | AceStream advanced setup | AceStream Guide', 'content' => 'buffering'));
+});
+
 //setup template array and get file modification time for http caching
 function setupTemplate($ruisseau, $template)
 {
