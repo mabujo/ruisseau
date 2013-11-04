@@ -9,7 +9,7 @@
 	</div>
 
 	<div class="container">
-		<h2>Installing AceStream</h2>
+		<h2>About</h2>
 		<p>About text</p>
 
 	</div>
