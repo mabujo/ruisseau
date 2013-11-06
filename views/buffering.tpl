@@ -20,6 +20,7 @@
 		<p>This panel is where we shall setup some basic options for AceStream :</p>
 		<img src="http://doyle.mabujo.com/acestream/img/acestream_screenshots/acestream_options.png" class="img-responsive" alt="AceStream options panel"/>
 		<p>The first 3 options are self explanatory, and for our purposes we don't much care about them, so make them unchecked.<p>
+		<p>Note : in theory "Start with sufficient speed only" could be useful - using this setting means that AceStream will wait until we have enough video in the buffer before it starts playing, as it continues to buffer more. In practice though if (even after setting AceStream up properly) you have an insufficient connection, even waiting for an initial chunk to buffer won't do you much good if subsequent chunks don't arrive in time - you will continue to suffer buffering problems.</p>
 		<ul>
 			<li>Play entertaining videos while prebuffering : <small>uncheck</small></li>
 			<li>Start with sufficient speed only : <small>uncheck</small></li>
@@ -63,9 +64,23 @@
 		<p>The advanced options panel gives us three options, Port, Total max connects, and Max connects per stream.</p>
 		<p>The port specifies which port AceStream will announce itself on to the internet. The port number itself is not important, as long as the port is not in use by another program behind your router. The port number you choose is important though, as we will need to know what the port number set here is later so that we can open that port on our router.</p>
 		<p>Just leave the port how it is for now, but in the unlikely event you have problems later you could try changing it. If you want to use more than one computer in your network to watch streams at the same time, you should also set different ports for each computer.</p>
-
-
+		<p>The other two settings on this page specify the number of peers we will allow AceStream to connect to per stream, and how many peers we allow AceStream to connect to in total (if we are connecting to multiple streams at once.</p>
+		<p>With the settings below of 100 connections per stream and 400 connections in total, we can obviously watch up to 4 streams at once at 100 connections each. I wouldn't actually recommend this unless you're on a very good connection, as there is obviously overhead in keeping all of those connections open to other peers.</p>
+		<p>The default setting of connections per stream is however a bit low, so try this around 100, to allow you to connect to more peers.</p>
+		<p>It's worth noting that connecting to more peers doesn't necessarily mean we will get a faster download speed if the extra peers we connect to do not upload at a decent rate. </p>
+		<ul>
+			<li>Port : <small>8621</small></li>
+			<li>Total max connects : <small>400</small></li>
+			<li>Max connects per stream : <small>100</small></li>
+		</ul>
 		<h2>Opening the AceStream port on your router</h2>
+		<p>Now that we know which port we are going to announce to the internet, we need to open this port on our router, and direct traffic on that port to our machine, so that the stream packets can be routed properly.</p>
+		<p>How you go about opening a port will depend on the type, make, and model of your networking equipment. As mentioned, what we want to do is open a port to make a connection to our machine for the AceStream program. This is called a port forward. If you are connected directly to the internet via a modem, you may not need to do this step, but if you are behind any kind of router, you will probably need to open a port.</p>
+		<p>Opening a port is a simple procedure that usually involves logging in to a web interface of your router, but as mentioned, different equipment and different providers have different ways of facilitating the same function. </p>
+		<p>If you don't already know how to open a port on your router, you should look at the documention provided to you by your router manufacture or internet service provider. If you do not have this handy or cannot find the port forwarding instructions, the <a href="http://portforward.com/english/routers/port_forwarding/" target="_blank" >port forward site</a> provides guides for hundreds of makes and models of networking equipment, and you can probably find the information you need there.</p>
+		<p>Once you have found out how to open a port on your router, you will need to know the port number you chose for AceStream, and the internal ip address of the computer you want to use AceStream on in order to open the port.</p>
+		<h2>Enjoy your stream!</h2>
+		<p>Now that you have configured AceStream and opened a port on your router, you should be able to enjoy streams in great quality and buffering free!</p>
 
 		<h2>What is ISP peer-to-peer throttling?</h2>
 
