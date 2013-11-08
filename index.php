@@ -59,6 +59,15 @@ $ruisseau->get('/buffering/', function() use ($ruisseau)
 	$ruisseau->render($template['name'], array('title' => 'Fix AceStream buffering | AceStream advanced setup | AceStream Guide', 'content' => 'buffering'));
 });
 
+//throttling page
+$ruisseau->get('/throttling/', function() use ($ruisseau) 
+{
+	$template = setupTemplate($ruisseau, 'throttling.tpl');
+	$ruisseau->lastModified($template['lastMod']);
+	$ruisseau->expires('+1 week');
+	$ruisseau->render($template['name'], array('title' => 'ISP throttling of AceStream P2P | AceStream Guide', 'content' => 'throttling'));
+});
+
 //setup template array and get file modification time for http caching
 function setupTemplate($ruisseau, $template)
 {

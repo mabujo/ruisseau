@@ -81,9 +81,6 @@
 		<p>Once you have found out how to open a port on your router, you will need to know the port number you chose for AceStream, and the internal ip address of the computer you want to use AceStream on in order to open the port.</p>
 		<h2>Enjoy your stream!</h2>
 		<p>Now that you have configured AceStream and opened a port on your router, you should be able to enjoy streams in great quality and buffering free!</p>
-
-		<h2>What is ISP peer-to-peer throttling?</h2>
-
-		<h2>How to test if your connection is throttled</h2>
+		<p>If after following this guide you are still having problems with buffering, you either do not have a good enough connection or you may be suffering from throttling of peer-to-peer traffic by your internet service provider. To learn more about how to to diagnose and how you can resolve ISP throttling, consult our ISP throttling guide.</p>
 	</div>
 {/block}

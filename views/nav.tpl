@@ -18,6 +18,7 @@
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
 			<ul class="dropdown-menu">
 				<li {if $content eq 'buffering'}class="active"{/if}><a href="{siteUrl}buffering/">Fix AceStream Buffering</a></li>
+				<li {if $content eq 'throttling'}class="active"{/if}><a href="{siteUrl}throttling/">AceStream ISP throttling</a></li>
 				<li class="divider"></li>
 				<li class="dropdown-header">AceStream on Linux</li>
 				<li {if $content eq 'linux'}class="active"{/if}><a href="{siteUrl}linux/">Linux AceStream install</a></li>
