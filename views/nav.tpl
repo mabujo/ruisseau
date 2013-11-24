@@ -14,6 +14,7 @@
 			<li {if $content eq 'index'}class="active"{/if}><a href="{siteUrl}">Home</a></li>
 			<li {if $content eq 'about'}class="active"{/if}><a href="{siteUrl}about/">About</a></li>
 			<li {if $content eq 'contact'}class="active"{/if}><a href="#contact">Contact</a></li>
+			<li {if $content eq 'streams'}class="active"{/if}><a href="{siteURL}streams/">Streams</a></li>
 			<li class="dropdown{if $content eq 'linux' || $content eq 'buffering'} active{/if}">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
 			<ul class="dropdown-menu">
