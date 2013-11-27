@@ -68,7 +68,7 @@ $ruisseau->get('/throttling/', function() use ($ruisseau)
 	$ruisseau->render($template['name'], array('title' => 'ISP throttling of AceStream P2P | AceStream Guide', 'content' => 'throttling'));
 });
 
-//throttling page
+//streams page
 $ruisseau->get('/streams/', function() use ($ruisseau) 
 {
 	$template = setupTemplate($ruisseau, 'streams.tpl');
