@@ -27,4 +27,8 @@ body {
   background-color: #2C3E50;
 }
 
-.credit { margin: 20px 0; }
+.credit { margin: 20px 0; float: left; }
+
+#footer .container { position: relative; }
+#social_buttons { display: flex; position: absolute; right: 0; top: 20px; }
+.social_button {  }

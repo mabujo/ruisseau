@@ -1,3 +1,5 @@
+// social buttons async
+
 (function(doc, script) {
   var js, 
       fjs = doc.getElementsByTagName(script)[0],
