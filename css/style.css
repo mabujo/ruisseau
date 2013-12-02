@@ -1,12 +1,10 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-
 html,
 body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
-
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -16,21 +14,14 @@ body {
   /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
-
 .navbar-brand { font-weight: bold; }
-
 .jumbotron .container { margin-top: 20px;}
-
 /* Set the fixed height of the footer here */
 #footer {
   height: 60px;
   background-color: #2C3E50;
 }
-
 #main_content { padding-bottom: 20px; }
-
 .credit { margin: 20px 0; float: left; }
-
 #footer .container { position: relative; }
 #social_buttons { display: flex; position: absolute; right: 0; top: 20px; }
-.fb-like { margin-top: -4px; }
