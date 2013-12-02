@@ -31,4 +31,4 @@ body {
 
 #footer .container { position: relative; }
 #social_buttons { display: flex; position: absolute; right: 0; top: 20px; }
-.social_button {  }
+.fb-like { margin-top: -4px; }
