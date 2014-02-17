@@ -18,7 +18,6 @@
 		  </div>
 
 		 <div class="table-responsive">
-
         <table class="table table-hover table-striped">
           <thead>
             <tr>
@@ -79,6 +78,15 @@
             </tr>
           </tbody>
         </table>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- acestream_stream_btm_lg-rct -->
+        <ins class="adsbygoogle"
+        style="display:inline-block;width:336px;height:280px"
+        data-ad-client="ca-pub-0329298002587041"
+        data-ad-slot="5840751682"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
 		</div>
 
 		</div>

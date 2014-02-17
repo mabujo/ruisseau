@@ -25,7 +25,7 @@
 		<ul>
 			<li>Play entertaining videos while prebuffering : <small>uncheck</small></li>
 			<li>Start with sufficient speed only : <small>uncheck</small></li>
-			<li>Automatically determine download limit : <small>uncheck</small></li>
+			<li>Automatically determine download limit : <small>uncheck.</small></li>
 		</ul>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- acestream_buffer_ic_leader -->
