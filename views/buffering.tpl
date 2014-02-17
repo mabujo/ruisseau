@@ -27,6 +27,15 @@
 			<li>Start with sufficient speed only : <small>uncheck</small></li>
 			<li>Automatically determine download limit : <small>uncheck</small></li>
 		</ul>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- acestream_buffer_ic_leader -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:728px;height:90px"
+		     data-ad-client="ca-pub-0329298002587041"
+		     data-ad-slot="5980352484"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 		<h4>VOD/Live buffer</h4>
 		<p>These options control how much of a buffer you want, in seconds. VOD buffer is I think not used for anything at this time, so we can leave it how it is.</p>
 		<h5>Live buffer</h5>
@@ -80,6 +89,15 @@
 		<p>Opening a port is a simple procedure that usually involves logging in to a web interface of your router, but as mentioned, different equipment and different providers have different ways of facilitating the same function. </p>
 		<p>If you don't already know how to open a port on your router, you should look at the documention provided to you by your router manufacture or internet service provider. If you do not have this handy or cannot find the port forwarding instructions, the <a href="http://portforward.com/english/routers/port_forwarding/" target="_blank" >port forward site</a> provides guides for hundreds of makes and models of networking equipment, and you can probably find the information you need there.</p>
 		<p>Once you have found out how to open a port on your router, you will need to know the port number you chose for AceStream, and the internal ip address of the computer you want to use AceStream on in order to open the port.</p>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- acestream_buffer_ic_lg-rct -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:336px;height:280px"
+		     data-ad-client="ca-pub-0329298002587041"
+		     data-ad-slot="1410552080"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 		<h2>Enjoy your stream!</h2>
 		<p>Now that you have configured AceStream and opened a port on your router, you should be able to enjoy streams in great quality and buffering free!</p>
 		<p>If after following this guide you are still having problems with buffering, you either do not have a good enough connection or you may be suffering from throttling of peer-to-peer traffic by your internet service provider. To learn more about how to to diagnose and how you can resolve ISP throttling, consult our ISP throttling guide.</p>
