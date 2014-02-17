@@ -41,10 +41,16 @@
               <td><a href="">Link</a></td>
             </tr>
             <tr>
-              <td>Torrent Tv</td>
+              <td>Torrent Tv 1</td>
               <td>Sky Sports, Premier League</td>
               <td>English</td>
               <td><a href="acestream://fe9e1a075a083dd3ea4451116937a7a3a51dff0d">Link</a></td>
+            </tr>
+            <tr>
+              <td>Torrent Tv 2</td>
+              <td>BT Sports, Sky, Premier League</td>
+              <td>English</td>
+              <td><a href="acestream://0a6329542da7d11695c8b09fb698fa0173d96606">Link</a></td>
             </tr>
             <tr>
               <td>TRK Ukraine+</td>
