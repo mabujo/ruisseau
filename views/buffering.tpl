@@ -6,6 +6,7 @@
 			<p>When you first install AceStream, if you don't have a very fast connection, you might experience some problems with buffering. This guide will help you fix the buffering.</p>
 		</div>
 	</div>
+	{include 'adsense_top.tpl'}
 
 	<div class="container">
 		<h2>Best AceStream settings for streaming</h2>

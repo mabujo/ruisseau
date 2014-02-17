@@ -7,6 +7,7 @@
 			<p>Our guide will help you to setup AceStream, so you can enjoy your stream easily and in the best quality.</p>
 		</div>
 	</div>
+	{include 'adsense_top.tpl'}
 
 	<div class="container">
 		<h2>Advantages of AceStream</h2>
@@ -28,5 +29,6 @@
 		<p>AceStream is available for Linux. Follow our <a href="{siteUrl}linux/">Linux AceStream installation guide</a> to install AceStream on your system</p>
 		<h3>Mac OS X</h3>
 		<p>AceStream is currently not available for Macintosh computers, so to install AceStream on a Mac, you will need to use some sort of virtualization software, such as BootCamp or VirtualBox to install a Windows/Linux virtual machine in which you can run AceStream.</p>
+		{include 'adsense_home_bottom.tpl'}
 	</div>
 {/block}

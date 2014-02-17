@@ -6,7 +6,7 @@
 			<p>AceStream is fairly easy to install on Ubuntu and Debian, follow our guide to install AceStream on your system.</p>
 		</div>
 	</div>
-
+	{include 'adsense_top.tpl'}
 	<div class="container">
 		<h2>Installing AceStream on Ubuntu</h2>
 		<h3>Ubuntu 13.10</h3>

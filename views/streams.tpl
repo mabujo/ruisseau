@@ -6,6 +6,7 @@
 			<p>This is a directory of some popular AceStream streams (channels). Note that none of the streams are run or hosted by AceStream Guide.</p>
 		</div>
 	</div>
+  {include 'adsense_top.tpl'}
 
 	<div class="container">
 		<h2>AceStream Live Streams Directory</h2>
