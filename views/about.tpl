@@ -10,7 +10,9 @@
 
 	<div class="container">
 		<h2>About</h2>
-		<p>About text</p>
+		<p>This site was made only to help people who like us had problems getting AceStream setup, and experienced trouble with buffering.</p>
+		<p>Ace Stream guide is a simple informational site and does not host, or link to any pirated content.</p>
+		<p>This site was made by <a href="https://mabujo.com/" title="marbella web design - mabujo">mabujo</a>.</p>
 
 	</div>
 {/block}
